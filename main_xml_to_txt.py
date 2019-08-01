@@ -9,7 +9,7 @@ from FCECorpusHandler import FCECorpusHandler
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Extracts transcript and summary from AMI Corpus.')
+    parser = argparse.ArgumentParser(description='Extracts transcript and summary from FCE Corpus.')
     parser.add_argument('--fce_xml_dir', type=str, default=utils.project_dir_name() + '/data/',
                         help='FCE Corpus download directory')
     parser.add_argument('--results_dir', type=str,
