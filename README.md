@@ -15,22 +15,15 @@
 * Minidom: XML parser for Python
 
 ## How to Make
-#### 1. Source and target
+### 1. Source and target
 Download FCE Corpus and convert to source and target `.txt` files
 ```
-python main_xml_to_txt.py
+python main_xml_to_txt.py --fce_xml_dir data/ results_dir data/fce_txt/
 ```
+  + `fce_xml_dir`: directory where the FCE `.xml` Corpus will be downloaded
+  + `results_dir`: directory where the `.txt` data will be saved
 
-  **Configuration options**
-
-  | **Argument**                      | **Type** | **Default**                       |
-  |-----------------------------------|----------|-----------------------------------|
-  | `fce_xml_dir`                     | string   | `"data/"`                         |
-  | `results_dir`                     | string   | `"data/fce_txt/"`          |
-  + `fce_xml_dir` is the directory where the FCE Corpus will be downloaded
-  + `results_dir` is the directory where the `TXT` data will be saved
-
-#### 2. Vocab
+### 2. Vocab
 Run [skasewa's script](https://github.com/skasewa/wronging/blob/master/seq2seq/bin/tools/generate_vocab.py):
 ```
 python generate_vocab.py --max_vocab_size 20000 --downcase True --infile data/fce_txt/test/source.txt --outfile data/fce_txt/test/vocab.txt
