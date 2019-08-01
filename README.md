@@ -1,5 +1,5 @@
 ## About
-* Converts `XML` to `TXT`
+* Converts `XML` to `TXT` for use in [this repository](https://github.com/skasewa/wronging)
 * Extracts original and corrected essays from [FCE Corpus](https://www.ilexir.co.uk/datasets/index.html)
 
 #### Contents
@@ -15,19 +15,31 @@
 * Minidom: XML parser for Python
 
 ## How to Make
-Download FCE Corpus and convert to `.txt` files
+#### 1. Source and target
+Download FCE Corpus and convert to source and target `.txt` files
 ```
 python main_xml_to_txt.py
 ```
 
-#### Configuration options
+  **Configuration options**
 
-| **Argument**                      | **Type** | **Default**                       |
-|-----------------------------------|----------|-----------------------------------|
-| `fce_xml_dir`                     | string   | `"data/"`                         |
-| `results_dir`                     | string   | `"data/fce_txt/"`          |
-+ `fce_xml_dir` is the directory where the FCE Corpus will be downloaded
-+ `results_dir` is the directory where the `TXT` data will be saved
+  | **Argument**                      | **Type** | **Default**                       |
+  |-----------------------------------|----------|-----------------------------------|
+  | `fce_xml_dir`                     | string   | `"data/"`                         |
+  | `results_dir`                     | string   | `"data/fce_txt/"`          |
+  + `fce_xml_dir` is the directory where the FCE Corpus will be downloaded
+  + `results_dir` is the directory where the `TXT` data will be saved
+
+#### 2. Vocab
+Run [skasewa's script](https://github.com/skasewa/wronging/blob/master/seq2seq/bin/tools/generate_vocab.py):
+```
+python generate_vocab.py --max_vocab_size 20000 --downcase True --infile data/fce_txt/test/source.txt --outfile data/fce_txt/test/vocab.txt
+python generate_vocab.py --max_vocab_size 20000 --downcase True --infile data/fce_txt/train/source.txt --outfile data/fce_txt/train/vocab.txt
+python generate_vocab.py --max_vocab_size 20000 --downcase True --infile data/fce_txt/dev/source.txt --outfile data/fce_txt/dev/vocab.txt
+```
+> Script has also been added to this repository for future use
+
+> Number of words: 4,495 (test), 17,770 (train), 4,119 (dev)
 
 ## Acknowledgement
 * Please star or fork if this code was useful for you.
