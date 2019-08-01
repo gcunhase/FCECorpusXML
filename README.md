@@ -37,7 +37,7 @@ python generate_vocab.py --max_vocab_size 20000 --downcase True --infile data/fc
 ## Acknowledgement
 * Please star or fork if this code was useful for you.
 
-* Disclaimer: This is not my dataset, but I found the need to convert it to a different format for use with [this model]([this repository](https://github.com/skasewa/wronging)), thus the creation of this repository.
+* Disclaimer: This is not my dataset, but I found the need to convert it to a different format for use with [this model](https://github.com/skasewa/wronging), thus the creation of this repository.
 
 * Please read the [Licence Agreement](https://www.ilexir.co.uk/datasets/index.html) before use:
 ```
