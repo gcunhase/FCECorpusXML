@@ -18,7 +18,7 @@
 ### 1. Source and target
 Download FCE Corpus and convert to source and target `.txt` files
 ```
-python main_xml_to_txt.py --fce_xml_dir data/ results_dir data/fce_txt/
+python main_xml_to_txt.py --fce_xml_dir data/ --results_dir data/fce_txt/
 ```
   + `fce_xml_dir`: directory where the FCE `.xml` Corpus will be downloaded
   + `results_dir`: directory where the `.txt` data will be saved
