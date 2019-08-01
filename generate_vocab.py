@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-# Source: https://github.com/skasewa/wronging/blob/master/seq2seq/bin/tools/generate_vocab.py
+# Source: https://github.com/google/seq2seq/blob/master/bin/tools/generate_vocab.py
 # Changes made:
 #   Saves vocabulary in file
 #

@@ -24,7 +24,7 @@ python main_xml_to_txt.py --fce_xml_dir data/ --results_dir data/fce_txt/
   + `results_dir`: directory where the `.txt` data will be saved
 
 ### 2. Vocab
-Run [skasewa's script](https://github.com/skasewa/wronging/blob/master/seq2seq/bin/tools/generate_vocab.py):
+Run [script](https://github.com/google/seq2seq/blob/master/bin/tools/generate_vocab.py):
 ```
 python generate_vocab.py --max_vocab_size 20000 --downcase True --infile data/fce_txt/test/source.txt --outfile data/fce_txt/test/vocab.txt
 python generate_vocab.py --max_vocab_size 20000 --downcase True --infile data/fce_txt/train/source.txt --outfile data/fce_txt/train/vocab.txt
