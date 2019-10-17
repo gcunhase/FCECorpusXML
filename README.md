@@ -41,7 +41,7 @@ python generate_vocab.py --max_vocab_size 20000 --downcase True --infile data/fc
   ```
   @misc{cunha_sergio2019fce_xml2txt,
       author       = {Gwenaelle Cunha Sergio},
-      title        = {{Converting FCE Corpus from XML to TXT format}},
+      title        = {Converting FCE Corpus from XML to TXT format},
       month        = oct,
       year         = 2019,
       doi          = {10.5281/zenodo.3496455},
