@@ -1,9 +1,11 @@
+[![DOI](https://zenodo.org/badge/199615833.svg)](https://zenodo.org/badge/latestdoi/199615833)
+
 ## About
 * Converts `XML` to `TXT` for use in [this repository](https://github.com/skasewa/wronging)
 * Extracts original and corrected essays from [FCE Corpus](https://www.ilexir.co.uk/datasets/index.html)
 
 #### Contents
-[FCE Corpus](#fce-corpus) • [Requirements](#requirements) • [How to Make](#how-to-make) • [Acknowledgement](#acknowledgement) 
+[FCE Corpus](#fce-corpus) • [Requirements](#requirements) • [How to Make](#how-to-make) • [How to Cite](#acknowledgement) 
 
 ## FCE Corpus
 * Cambridge Learner Corpus (CLC)'s First Certificate in English (FCE)
@@ -35,7 +37,19 @@ python generate_vocab.py --max_vocab_size 20000 --downcase True --infile data/fc
 > Number of words: 4,495 (test), 17,770 (train), 4,119 (dev)
 
 ## Acknowledgement
-* Please star or fork if this code was useful for you.
+* Please star or fork if this code was useful for you. If you use it in a paper, please cite as:
+```
+@misc{cunha_sergio2019fce_xml2txt,
+    author       = {Gwenaelle Cunha Sergio},
+    title        = {{Converting FCE Corpus from XML to TXT format}},
+    month        = oct,
+    year         = 2019,
+    doi          = {10.5281/zenodo.3496455},
+    version      = {1.0.0},
+    publisher    = {Zenodo},
+    url          = {https://github.com/gcunhase/FCECorpusXML}
+    }
+```
 
 * Disclaimer: This is not my dataset, but I found the need to convert it to a different format for use with [this model](https://github.com/skasewa/wronging), thus the creation of this repository.
 
@@ -53,7 +67,7 @@ The Dataset is released for non-commercial research and educational purposes und
     8. This Agreement shall be governed by and construed in accordance with the laws of England and the English courts shall have exclusive jurisdiction.
 ``` 
 
-* Please refer to the following citation if you use this dataset:  
+* Please refer to the following citation if you use the FCE Corpus:  
 ```
 @inproceedings{yannakoudakis2011new,
   title={A new dataset and method for automatically grading ESOL texts},
