@@ -39,7 +39,7 @@ python generate_vocab.py --max_vocab_size 20000 --downcase True --infile data/fc
 ## Acknowledgement
 * Please star or fork if this code was useful for you. If you use it in a paper, please cite as:
   ```
-  @misc{cunha_sergio2019fce_xml2txt,
+  @software{cunha_sergio2019fce_xml2txt,
       author       = {Gwenaelle Cunha Sergio},
       title        = {{gcunhase/FCECorpusXML: Converting FCE Corpus from XML to TXT format}},
       month        = oct,
